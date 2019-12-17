@@ -1,0 +1,52 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background-color: turquoise;
+  background-image: url("https://ae01.alicdn.com/kf/HTB1x0mTPVXXXXaRapXXq6xXFXXXQ/photo-wallpaper-HD-hand-painted-wallpaper-European-style-cake-dessert-mural-coffee-shop-tooling-background-wall.jpg");
+  object-fit: cover;
+  height: 100vh;
+}
+
+h1{
+text-align: center;
+padding-top: 70px;
+}
+
+#searchbar{
+  text-align: center;
+}
+
+button{
+  padding: 5px;
+  border-radius: 28%;
+  background-color: pink;
+}
+
+input {
+  border: solid pink 3px;
+  padding: 5px;
+  border-radius: 28%;
+}
+
+img{
+  grid-area: image;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+
+}
+
+.buttonsCat{
+display:grid;
+grid-template-areas: "image image image";
+padding-left: 4px;
+
+}
+
+section {
+  grid-area: main;
+  background-color:#9e6d6a;
+  background-position: fixed;
+  width: auto;
+}

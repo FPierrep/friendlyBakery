@@ -1,19 +1,34 @@
 require "sinatra"
 require "httparty"
+require "googlebooks"
 
 
 get "/" do
-  erb :categorypage.erb
+  erb :index
 end
 
-get "/categories/ :cake" do
-  erb :cakepage.erb
+post "/" do
+  puts params
+  @input = params["query"]
+  @books = GoogleBooks.search(@input)
+  erb :results
 end
 
-get "/categories/ :cookie" do
-  erb :cookiepage.erb
+
+
+get "/cakepage" do
+  erb :cakepage
 end
 
-get "/categories/ :muffin" do
-  erb :muffinpage.erb
+
+get "/cookiepage" do
+  erb :cookiepage
+end
+
+
+
+
+get "/muffinpage" do
+
+  erb :muffinpage
 end
